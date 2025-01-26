@@ -32,8 +32,9 @@ def preprocessing(img):
     img = img/255
     return img
 #testing with image
-url = 'https://c7.alamy.com/comp/2RBXEHH/german-traffic-sign-restricting-speed-to-20-kilometers-per-hour-2RBXEHH.jpg'
-r = requests.get(url, stream=True)
+mph_20_url = 'https://c7.alamy.com/comp/2RBXEHH/german-traffic-sign-restricting-speed-to-20-kilometers-per-hour-2RBXEHH.jpg'
+right_turn_url = 'https://c7.alamy.com/comp/M5MTMK/german-road-sign-turn-right-ahead-M5MTMK.jpg'
+r = requests.get(right_turn_url, stream=True)
 image = Image.open(r.raw)
 plt.axis('off')
 plt.imshow(image, cmap=plt.get_cmap('gray'))
