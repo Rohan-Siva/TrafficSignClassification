@@ -12,4 +12,6 @@ Germany: https://bitbucket.org/jadslim/german-traffic-signs
 
 # Training Data
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Germany Training Accuracy]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/Rohan-Siva/TrafficSignClassification/blob/main/imgs/germany_accuracy.png))
+
+![Germany Training Graph]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/Rohan-Siva/TrafficSignClassification/blob/main/imgs/germany_accuracy.png))
