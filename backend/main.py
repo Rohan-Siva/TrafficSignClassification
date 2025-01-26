@@ -45,8 +45,8 @@ plt.imshow(img, cmap = plt.get_cmap('gray'))
 print(img.shape)
 img = img.reshape(1, 32, 32, 1)
 
-data = pd.read_csv('german-traffic-signs/signnames.csv')
-model = load_model('german_traffic_signs_classifier.h5')
+data = pd.read_csv('/Users/rohansiva/Desktop/ML_Projects/TrafficSignClassification/training_data/signnames.csv')
+model = load_model('/Users/rohansiva/Desktop/ML_Projects/TrafficSignClassification/CNN_Models/german_traffic_signs_classifier.h5')
 
 prediction = model.predict(img)
 pred = np.argmax(prediction)
