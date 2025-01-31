@@ -1,12 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_cors import CORS
+from routes.predict import predict_bp  # Import prediction route
 
 app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes
+CORS(app)
 
-@app.route('/api/data', methods=['GET'])
-def get_data():
-    return jsonify({"message": "Hello from Flask!"})
+# Register Blueprint
+app.register_blueprint(predict_bp)
 
 if __name__ == '__main__':
     app.run(debug=True)
