@@ -12,13 +12,13 @@ predict_bp = Blueprint("predict", __name__)
 #storing models and csv file sign name dirs
 
 MODELS = {
-    "germany": load_model("/Users/rohansiva/Desktop/ML_Projects/TrafficSignClassification/CNN_Models/german_traffic_signs_classifier.h5"),
-    "usa": load_model("backend/models/usa_model.h5"),
+    "germany": load_model("/Users/rohansiva/Desktop/ML_Projects/TrafficSignClassification/CNN_Models/german_traffic_signs_classifier.h5")#,
+    #"usa": load_model("backend/models/usa_model.h5"),
 }
 
 SIGN_NAMES = {
-    "germany": pd.read_csv("/Users/rohansiva/Desktop/ML_Projects/TrafficSignClassification/training_data/signnames.csv"),
-    "usa": pd.read_csv("backend/models/usa_signnames.csv"),
+    "germany": pd.read_csv("/Users/rohansiva/Desktop/ML_Projects/TrafficSignClassification/training_data/signnames.csv")#,
+    #"usa": pd.read_csv("backend/models/usa_signnames.csv"),
 }
 
 def preprocess_image(image): # processing w/ grayscale resizing for model etc

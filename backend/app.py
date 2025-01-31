@@ -1,12 +1,12 @@
 from flask import Flask
+from backend.routes.predict import predict_bp
 from flask_cors import CORS
-from routes.predict import predict_bp  # Import prediction route
 
-app = Flask(__name__)
-CORS(app)
+def create_app():
+    app = Flask(__name__)
+    CORS(app)  # To handle cross-origin requests
 
-# Register Blueprint
-app.register_blueprint(predict_bp)
+    # Register routes (like predict)
+    app.register_blueprint(predict_bp, url_prefix="/predict")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+    return app
