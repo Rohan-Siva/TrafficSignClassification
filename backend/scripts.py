@@ -57,3 +57,4 @@ plt.axis('off')
 for num, name in data.items():
   name = name.values
   print("predicted sign: "+ str(name[pred]))
+  print("confidence: ", float(np.max(prediction)))
